@@ -31,7 +31,7 @@ public class Informe1 {
 
 	        JasperPrint print = JasperFillManager.fillReport(report, parameters, conexion);
 
-	    	File pdf = new File("/home/dm2/reportepuntopdf.pdf");
+	    	File pdf = new File("/home/dm2/naciones.pdf");
 	    	JasperExportManager.exportReportToPdfStream(print, new FileOutputStream(pdf));
 	    } catch (Exception e) {
 	    	e.printStackTrace();
